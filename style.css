@@ -1,0 +1,67 @@
+:root {
+    --background-color: white;
+    --text-color: black;
+    --sclera-color: white;
+    --pupil-color: black;
+    --border-color: rgb(40, 40, 40);
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.modes-container {
+    position: fixed;
+    right: 20%;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.595);
+    padding: 20px 10px;
+    height: 30vh;
+    border-radius:  0 0 10px 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.595);
+    border: none;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.modes-container > button {
+    background-color: rgba(0, 0, 0, 0.255);
+    color: white;
+    border: none;
+    padding: 10px 30px;
+}
+.modes-container > button:hover {
+    background-color: rgba(0, 0, 0, 0.455);
+}
+
+.eye-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sclera {
+    background-color: var(--background-color);
+    width: max(20vw, 220px);;
+    aspect-ratio: 2/1;
+    border-radius: 120px 20px;
+    border: 2px solid var(--border-color);
+    border-right: 20px solid var(--border-color);
+    border-top: 20px solid var(--border-color);
+    box-shadow: 0 0 5px var(--border-color);
+}
+
+.pupil {
+    height: 80%;
+    background-color: var(--pupil-color);
+    border-radius: 50%;
+    aspect-ratio: 1;
+    margin: auto;
+    border: 10px solid var(--border-color);
+    position: relative;
+}
