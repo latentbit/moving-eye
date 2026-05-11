@@ -54,6 +54,8 @@
     border-right: 20px solid var(--border-color);
     border-top: 20px solid var(--border-color);
     box-shadow: 0 0 5px var(--border-color);
+    position: relative;
+    overflow: hidden;
 }
 
 .pupil {
@@ -63,5 +65,5 @@
     aspect-ratio: 1;
     margin: auto;
     border: 10px solid var(--border-color);
-    position: relative;
+    position: absolute;
 }
